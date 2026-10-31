@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a6b3d">
+<title>AgriGO – Ani mo, Hatid ko!</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+<div id="app">
+  <!-- Splash screen: shown first on every app start -->
+  <div id="splash" aria-label="AgriGO is loading" role="status">
+    <img class="lf lf-tl" src="assets/leaves-tl.svg" alt="">
+    <img class="lf lf-br" src="assets/leaves-tl.svg" alt="">
+    <img class="sp-logo" src="assets/agrigo-logo.png" alt="AgriGo – Ani mo, Hatid ko!">
+    <div class="sp-load"><div class="sp-bar"><i id="spBar"></i></div><p>Loading...</p></div>
+  </div>
+  <!-- Login / Sign-up screens are built by auth.js -->
+  <div id="auth" aria-live="polite"></div>
+  <!-- Google / Facebook sign-in screens (filled by auth.js) -->
+  <div id="oauth" role="dialog" aria-modal="true"></div>
+  <main id="view" aria-live="polite"></main>
+  <nav id="nav" aria-label="Main navigation"></nav>
+  <div id="mini" role="button" tabindex="0" aria-label="Active delivery"></div>
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="toast" role="status"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="script.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>
